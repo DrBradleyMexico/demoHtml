@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<Head>
+    <title>Demo HTML</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</Head>
+
+
+<body>
+    <h1 class="homeGreeting">Hola!👋</h1>
+    <div class="homeLinks">
+        <p>This is my fourth website, I like making websites.</p>
+        <div>
+            <a target="_blank" href="https://www.bigwet.online/">Check out this one!</a>
+        </div>
+    </div>
+    <div class="homeLinks">
+        <img id="img" src="spinningfrog.gif" />
+    </div>
+    <div class="homeLinks">
+        <button onClick="rotateFrog()">Weee!</button>
+        <script>
+            let rotate = 0;
+            function rotateFrog() {
+                rotate += 90;
+                if (rotate === 360) {
+                    rotate = 0;
+                }
+                document.querySelector("#img").style.transform = `rotate(${rotate}deg)`;
+            }
+        </script>
+    </div>
+</body>
+
+</html>

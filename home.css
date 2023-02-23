@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Rubik+Glitch&display=swap');
+
+@font-face {
+    font-family: 'hackedregular';
+    src: url("assets/fonts/hacked-kerx-webfont.woff2") format('woff2'),
+        url("assets/fonts/hacked-kerx-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: DM Sans;
+    color: #070606;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightcoral;
+}
+
+.homeGreeting {
+    display: flex;
+    justify-content: center;
+}
+
+.homeLinks {
+    display: flex;
+    justify-content: center;
+}
